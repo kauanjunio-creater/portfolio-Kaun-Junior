@@ -1,91 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
-
-:root {
-    --cor-principal: #6E859F;
-    --cor-secundaria: #284260;
-    --cor-destaque: #094aff;
-    --cor-fundo: #f5f5f5;
-    --cor-fundo-escuro: #121212;
-    --cor-texto-escuro: #ffffff;
+/* Botão de modo escuro */
+#dark-mode-toggle {
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
-/* Estilos gerais */
-body {
-    font-family: 'Chakra Petch', sans-serif;
-    color: var(--cor-principal);
-    background-color: var(--cor-fundo);
-    transition: background 0.3s, color 0.3s;
+/* Espaçamento entre os blocos */
+section, main, footer {
+    margin-top: 3rem;
 }
 
-h1, h2, h5 {
-    color: var(--cor-secundaria);
-    font-weight: 700;
+/* Formulário */
+form label {
+    font-weight: 600;
+    margin-top: 1rem;
 }
 
-.lead, .btn-link {
-    color: var(--cor-destaque);
-    font-weight: 700;
+form input,
+form textarea {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
 }
 
-/* Links */
-a, .btn-link:hover {
-    color: var(--cor-principal);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--cor-destaque);
-}
-
-/* Estilos para modo escuro */
-.dark-mode {
-    background-color: var(--cor-fundo-escuro);
-    color: var(--cor-texto-escuro);
-    transition: background 0.3s, color 0.3s;
-}
-
-.dark-mode h1, .dark-mode h2, .dark-mode h5 {
-    color: var(--cor-texto-escuro);
-}
-
-.dark-mode .btn-outline-dark {
-    border-color: var(--cor-texto-escuro);
-    color: var(--cor-texto-escuro);
-}
-
-/* Animações */
-.badge {
-    transition: transform 0.3s ease;
-}
-
-.badge:hover {
-    transform: scale(1.2);
-}
-
-/* Estilos para cartões de projetos */
-.card {
+form button {
+    background-color: var(--cor-destaque);
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+form button:hover {
+    background-color: #0739c6;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .container {
-        text-align: center;
-    }
-
-    .badge {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .card {
-        margin-bottom: 15px;
-    }
+/* Footer */
+footer {
+    text-align: center;
+    color: var(--cor-principal);
 }
+
+footer i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+footer
